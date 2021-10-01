@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/new-web-react/static/css/main.0d1cf90b.chunk.css",
+    "main.js": "/new-web-react/static/js/main.85e0ef6a.chunk.js",
+    "main.js.map": "/new-web-react/static/js/main.85e0ef6a.chunk.js.map",
+    "runtime-main.js": "/new-web-react/static/js/runtime-main.cf191c02.js",
+    "runtime-main.js.map": "/new-web-react/static/js/runtime-main.cf191c02.js.map",
+    "static/js/2.a6362433.chunk.js": "/new-web-react/static/js/2.a6362433.chunk.js",
+    "static/js/2.a6362433.chunk.js.map": "/new-web-react/static/js/2.a6362433.chunk.js.map",
+    "static/js/3.aff20b42.chunk.js": "/new-web-react/static/js/3.aff20b42.chunk.js",
+    "static/js/3.aff20b42.chunk.js.map": "/new-web-react/static/js/3.aff20b42.chunk.js.map",
+    "index.html": "/new-web-react/index.html",
+    "static/css/main.0d1cf90b.chunk.css.map": "/new-web-react/static/css/main.0d1cf90b.chunk.css.map",
+    "static/js/2.a6362433.chunk.js.LICENSE.txt": "/new-web-react/static/js/2.a6362433.chunk.js.LICENSE.txt",
+    "static/media/CV-JohanPrado.222dec23.pdf": "/new-web-react/static/media/CV-JohanPrado.222dec23.pdf",
+    "static/media/Img-Contact.427cdf3b.png": "/new-web-react/static/media/Img-Contact.427cdf3b.png",
+    "static/media/Japdz_doble-exposure.3ddcdfac.jpg": "/new-web-react/static/media/Japdz_doble-exposure.3ddcdfac.jpg",
+    "static/media/App.css": "/new-web-react/static/media/h2_hero-min.69cc27f6.jpg",
+    "static/media/img-intro-web.fb09ba91.png": "/new-web-react/static/media/img-intro-web.fb09ba91.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cf191c02.js",
+    "static/js/2.a6362433.chunk.js",
+    "static/css/main.0d1cf90b.chunk.css",
+    "static/js/main.85e0ef6a.chunk.js"
+  ]
+}
