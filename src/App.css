@@ -1,4 +1,34 @@
 /*=================================================================
+  Estilos Generales
+==================================================================*/
+body{
+	background-color: #f2f2f2;  
+    line-height: 1.5;
+    color: #3a3a3a;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+ol, ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    -webkit-transition: all .3s ease-in 0s;
+        -moz-transition: all .3s ease-in 0s;
+            transition: all .3s ease-in 0s;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 500;
+}
+
+/*=================================================================
 Parallax CSS and Overlay
 ==================================================================*/
 .parallax-section {
@@ -24,7 +54,7 @@ Parallax CSS and Overlay
 
 
 /*=================================================================
-  CSS -- TypeWriterEffect
+    CSS -- TypeWriterEffect
 ==================================================================*/
 .react-typewriter-text-wrap {
 
@@ -305,7 +335,10 @@ figure.snip0015 {
 /*=================================================================
   Portafolio
 ==================================================================*/
-@import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap"); */
+.work-row{
+    margin-top: 20px !important;
+}
 
 :root {
     --d: 700ms;
@@ -313,8 +346,6 @@ figure.snip0015 {
     --font-sans: "Rubik", sans-serif;
     --font-serif: "Cardo", serif;
 }
-
-
 
 .page-content {
     display: grid;
@@ -356,7 +387,14 @@ figure.snip0015 {
     }
 }
 
-.card-work:before {
+.card-work.img-work1:before,
+.card-work.img-work2:before,
+.card-work.img-work3:before,
+.card-work.img-work4:before,
+.card-work.img-work5:before,
+.card-work.img-work6:before,
+.card-work.img-work7:before,
+.card-work.img-work8:before {
     content: "";
     position: absolute;
     top: 0;
@@ -369,9 +407,17 @@ figure.snip0015 {
     pointer-events: none;
 }
 
-.card-work:after {
+.card-work.img-work1:after,
+.card-work.img-work2:after,
+.card-work.img-work3:after,
+.card-work.img-work4:after,
+.card-work.img-work5:after,
+.card-work.img-work6:after,
+.card-work.img-work7:after,
+.card-work.img-work8:after
+ {
     content: "";
-    display: block;
+    display: flex;
     position: absolute;
     top: 0;
     left: 0;
@@ -383,20 +429,45 @@ figure.snip0015 {
     transition: transform calc(var(--d) * 2) var(--e);
 }
 
-.card-work:nth-child(1):before {
-    background-image: url(https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+.img-work1:before {
+    background-image: url("./img/portafolio/my-work1.jpg");
+    background-position: center center;
+
 }
 
-.card-work:nth-child(2):before {
-    background-image: url(https://images.unsplash.com/photo-1533903345306-15d1c30952de?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+.img-work2:before {
+    background-image: url("./img/portafolio/my-work2.jpg");
+    background-position: center center;
 }
 
-.card-work:nth-child(3):before {
-    background-image: url(https://images.unsplash.com/photo-1545243424-0ce743321e11?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+.img-work3:before {
+    background-image: url("./img/portafolio/my-work3.jpg");
+    background-position: center center;
 }
 
-.card-work:nth-child(4):before {
-    background-image: url(https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+.img-work4:before {
+    background-image: url("./img/portafolio/my-work4.jpg");
+    background-position: center center;
+}
+
+.img-work5:before {
+    background-image: url("./img/portafolio/my-work5.jpg");
+    background-position: center center;
+}
+
+.img-work6:before {
+    background-image: url("./img/portafolio/my-work6.jpg");
+    background-position: center center;
+}
+
+.img-work7:before {
+    background-image: url("./img/portafolio/my-work7.jpg");
+    background-position: center center;
+}
+
+.img-work8:before {
+    background-image: url("./img/portafolio/my-work8.jpg");
+    background-position: center center;
 }
 
 .content {
@@ -426,9 +497,21 @@ figure.snip0015 {
     font-style: italic;
     line-height: 1.35;
 }
+.container-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    margin: 0 10px;
     margin-top: 1.5rem;
     padding: 0.75rem 1.5rem;
     font-size: 0.65rem;
@@ -441,7 +524,7 @@ figure.snip0015 {
 }
 
 .btn:hover {
-    background-color: #0070a0;
+    background-color: #000d20;
 }
 
 .btn:focus {

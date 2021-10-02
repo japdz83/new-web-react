@@ -36,7 +36,6 @@ const About = ({ title, dark, id }) => {
                 className={classes.descargarcv}
                 startIcon={<DownloadOutline className={classes.iconDownload} />}
               >
-
                 <a href={pdf} download>
                   Descargar CV
                 </a>
@@ -126,7 +125,7 @@ const useStyles = makeStyles((theme) => ({
     left: "0",
     color: "#fff",
     "&:hover": {
-      backgroundColor: "#0070a0 ",
+      backgroundColor: "#000d20",
       color: "#fff ",
     },
     "& a": {
@@ -139,7 +138,6 @@ const useStyles = makeStyles((theme) => ({
     border: "#fff",
     width: "25px",
     height: "25px",
-
   },
 }));
 
