@@ -181,6 +181,7 @@ const useStyles = makeStyles((theme) => ({
   sidebar: {
     padding: "10px 10px",
     width: "30vw",
+    color: "#009fe3",
     [theme.breakpoints.down("sm")]: {
       width: "50vw",
     },
