@@ -33,6 +33,10 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     position: "relative",
     bottom: "0px",
+    [theme.breakpoints.down("sm", "md")]: {
+      position: "relative",
+      bottom: "0px",
+    },
   },
   sectiondark: {
     background: "#000d20",
