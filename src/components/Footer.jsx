@@ -1,9 +1,8 @@
 import React from "react";
-import { Container, makeStyles } from "@material-ui/core";
+import { Container, makeStyles, BottomNavigation } from "@material-ui/core";
 import { Typography } from "@material-ui/core";
 import imgFooter from "../img/logo-footer.png";
 import HeartIcon from "./icons/HeartIcon";
-
 
 const Hero = ({ title, dark, id }) => {
   const classes = useStyles();
@@ -15,7 +14,11 @@ const Hero = ({ title, dark, id }) => {
             <img src={imgFooter} alt="LogoFooter" />
           </div>
           <Typography>
-            <p className={classes.textFooter}>Diseñado y Desarrollado con <HeartIcon className={classes.footerIcon} /> por Johan Prado. Copyright © 2021. All Rights Reserved.</p>
+            <p className={classes.textFooter}>
+              Diseñado y Desarrollado con{" "}
+              <HeartIcon className={classes.footerIcon} /> por Johan Prado.
+              Copyright © 2021. All Rights Reserved.
+            </p>
           </Typography>
         </Container>
       </div>
@@ -28,6 +31,8 @@ const useStyles = makeStyles((theme) => ({
     minHeight: "20vh",
     padding: "30px 0px",
     textAlign: "center",
+    position: "relative",
+    bottom: "0px",
   },
   sectiondark: {
     background: "#000d20",
@@ -41,7 +46,6 @@ const useStyles = makeStyles((theme) => ({
         width: "20%",
       },
     },
-
   },
   textFooter: {
     color: "#fff",
@@ -54,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
     width: "22px",
     height: "22px",
     paddingTop: "5px",
-  }
+  },
 }));
 
 export default Hero;
